@@ -15,7 +15,7 @@ A **Swift** based reimplementation of the Apple HUD (Volume, Ringer, Rotation,â€
 - Works on top of presented view controllers, alerts,...
 - Comes with several *free* resources - Checkmark, Cross, Progress Indicator,â€¦
 - â€¦as well as **animated** ones.
-- Builds as an **iOS 8 framework**.
+- Builds as an **iOS 9 framework**.
 
 ![PKHUD.gif](https://cloud.githubusercontent.com/assets/1275218/10124182/09f4c406-654f-11e5-9cab-0f2e6f470887.gif)
 
@@ -24,42 +24,9 @@ A **Swift** based reimplementation of the Apple HUD (Volume, Ringer, Rotation,â€
 
 ### CocoaPods
 
-To install PKHUD for Swift 2 using CocoaPods, include the following in your Podfile
-
 ```ruby
-pod 'PKHUD', '~> 3.0'
+pod 'AK_PKHUD'
 ```
-
-To install PKHUD for Swift 3.x using CocoaPods, include the following in your Podfile
-
-```ruby
-pod 'PKHUD', '~> 4.0'
-```
-
-To install PKHUD for Swift 4.x, include the following in your Podfile
-
-```ruby
-pod 'PKHUD', '~> 5.0'
-```
-
-### Carthage
-
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
-
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
-
-```bash
-$ brew update
-$ brew install carthage
-```
-
-To integrate PKHUD into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```ogdl
-github "pkluz/PKHUD" ~> 4.0
-```
-
-Run `carthage update` to build the framework and drag the built `PKHUD.framework` into your Xcode project.
 
 ## How To
 
