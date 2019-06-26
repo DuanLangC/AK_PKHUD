@@ -15,15 +15,25 @@ fileprivate let animationKey = "progress"
 /// PKHUDProgressView provides an indeterminate progress view.
 open class PKHUDProgressView: PKHUDSquareBaseView, PKHUDAnimating {
 
-    var lineWidth: CGFloat? = nil
-    
+    var lineWidth: CGFloat = 2 {
+        didSet {
+            progressLayer.lineWidth = lineWidth
+        }
+    }
+
+    var radius: CGFloat? = nil {
+        didSet {
+            progressLayer.path = layoutPath(progressLayer.bounds).cgPath
+        }
+    }
+
     private lazy var progressLayer: CAShapeLayer = {
         let progressLayer = CAShapeLayer()
         progressLayer.frame = CGRect(x: 0.0, y: 0.0, width: 88.0, height: 88.0)
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = UIColor.black.cgColor
         progressLayer.path = layoutPath(progressLayer.frame).cgPath
-        progressLayer.lineWidth = 2
+        progressLayer.lineWidth = lineWidth
         self.layer.addSublayer(progressLayer)
         return progressLayer
     }()
@@ -58,7 +68,7 @@ open class PKHUDProgressView: PKHUDSquareBaseView, PKHUDAnimating {
         let path = UIBezierPath()
         path.addArc(
                 withCenter: frame.center,
-                radius: frame.midX * 0.9,
+                radius: radius ?? (frame.midX * 0.9),
                 startAngle: -0.5 * CGFloat.pi,
                 endAngle: 1.5 * CGFloat.pi,
                 clockwise: true)
@@ -86,6 +96,5 @@ open class PKHUDProgressView: PKHUDSquareBaseView, PKHUDAnimating {
     public func stopAnimation() {
         progressLayer.removeAnimation(forKey: animationKey)
     }
-
 }
 

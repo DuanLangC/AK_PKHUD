@@ -12,7 +12,9 @@
 		12CE19FD1E2578680062D873 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F996321E19514FD8001F73CA /* PKHUD.framework */; };
 		3097AF3A1C4843AE007DD42B /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */; };
 		3FEF27B97615CF867FD4D74F /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2E322E910133541C0208 /* CGRect+Ext.swift */; };
+		3FEF29B2565ED8D81A567735 /* PKHUDSmallerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF28552F6CA371ABC1613D /* PKHUDSmallerProgressView.swift */; };
 		3FEF2B9D66FF634CB8456224 /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2E322E910133541C0208 /* CGRect+Ext.swift */; };
+		3FEF2C8767B06623C0C2B30C /* PKHUDSmallerSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2AE486FFB0A6BC7C38BB /* PKHUDSmallerSquareBaseView.swift */; };
 		640011571C5B6C080013F32B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640011551C5B6C080013F32B /* HUD.swift */; };
 		F908BEC01BB849290015E5A8 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEBF1BB849290015E5A8 /* PKHUDSuccessView.swift */; };
 		F908BEC31BB84D0B0015E5A8 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEC21BB84D0B0015E5A8 /* PKHUDAnimating.swift */; };
@@ -89,6 +91,8 @@
 		12CE19F31E25784D0062D873 /* PKHUDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHUDDemoUITests.swift; sourceTree = "<group>"; };
 		12CE19F51E25784D0062D873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
+		3FEF28552F6CA371ABC1613D /* PKHUDSmallerProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSmallerProgressView.swift; sourceTree = "<group>"; };
+		3FEF2AE486FFB0A6BC7C38BB /* PKHUDSmallerSquareBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSmallerSquareBaseView.swift; sourceTree = "<group>"; };
 		3FEF2E322E910133541C0208 /* CGRect+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Ext.swift"; sourceTree = "<group>"; };
 		640011551C5B6C080013F32B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		F908BEBF1BB849290015E5A8 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSuccessView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				F908BEC71BB85EA70015E5A8 /* PKHUDProgressView.swift */,
 				12010C891C3D0E8D005DC6FC /* PKHUDAnimation.swift */,
 				3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */,
+				3FEF28552F6CA371ABC1613D /* PKHUDSmallerProgressView.swift */,
+				3FEF2AE486FFB0A6BC7C38BB /* PKHUDSmallerSquareBaseView.swift */,
 			);
 			name = "Content Views";
 			sourceTree = "<group>";
@@ -459,6 +465,8 @@
 				F935B1671B2B8D8C003C3734 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
 				12010C8A1C3D0E8D005DC6FC /* PKHUDAnimation.swift in Sources */,
 				3FEF2B9D66FF634CB8456224 /* CGRect+Ext.swift in Sources */,
+				3FEF29B2565ED8D81A567735 /* PKHUDSmallerProgressView.swift in Sources */,
+				3FEF2C8767B06623C0C2B30C /* PKHUDSmallerSquareBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

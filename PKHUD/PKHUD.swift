@@ -94,6 +94,15 @@ open class PKHUD: NSObject {
         }
     }
 
+    open var frameViewBackgroundColor: UIColor? {
+        get {
+            return container.frameView.backgroundColor
+        }
+        set {
+            container.frameView.backgroundColor = newValue
+        }
+    }
+
     open var effect: UIVisualEffect? {
         get {
             return container.frameView.effect

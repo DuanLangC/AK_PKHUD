@@ -22,6 +22,7 @@ class DemoViewController: UIViewController {
         
         HUD.dimsBackground = false
         HUD.allowsInteraction = false
+        
     }
     
     @IBAction func showHideKeyboard(_ sender: Any) {
@@ -48,6 +49,16 @@ class DemoViewController: UIViewController {
         delay(5.0) {
             // ...and once it finishes we flash the HUD for a second.
             HUD.flash(.success, delay: 1.0)
+        }
+    }
+    
+    @IBAction func showAnimatedSmallerProgressHUD(_ sender: AnyObject) {
+        HUD.show(.smallerProgress)
+        
+        // Now some long running task starts...
+        delay(5.0) {
+            // ...and once it finishes we flash the HUD for a second.
+            HUD.hide(animated: true)
         }
     }
 
