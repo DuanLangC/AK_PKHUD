@@ -43,9 +43,9 @@ class DemoViewController: UIViewController {
 
     @IBAction func showAnimatedProgressHUD(_ sender: AnyObject) {
         HUD.show(.progress)
-
+        
         // Now some long running task starts...
-        delay(2.0) {
+        delay(5.0) {
             // ...and once it finishes we flash the HUD for a second.
             HUD.flash(.success, delay: 1.0)
         }
