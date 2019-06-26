@@ -64,4 +64,30 @@ public final class PKHUDAnimation {
         animation.repeatCount = Float(INT_MAX)
         return animation
     }()
+
+    static let circleProgressAnimation: CAAnimationGroup = {
+        let a1 = CABasicAnimation(keyPath: "strokeEnd")
+        a1.duration = 1
+        a1.isRemovedOnCompletion = false
+        a1.fillMode = .forwards
+        a1.fromValue = 0
+        a1.toValue = 1
+        a1.timingFunction = CAMediaTimingFunction(name: .easeIn)
+
+        let a2 = CABasicAnimation(keyPath: "strokeStart")
+        a2.duration = 1
+        a2.isRemovedOnCompletion = false
+        a2.fillMode = .forwards
+        a2.fromValue = 0
+        a2.toValue = 1
+        a2.beginTime = 1
+        a2.timingFunction = CAMediaTimingFunction(name: .easeOut)
+
+        let group = CAAnimationGroup()
+        group.animations = [a1, a2]
+        group.duration = 2
+        group.repeatCount = Float.greatestFiniteMagnitude
+
+        return group
+    }()
 }

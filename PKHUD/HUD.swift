@@ -13,6 +13,7 @@ public enum HUDContentType {
     case success
     case error
     case progress
+    case smallerProgress
     case image(UIImage?)
     case rotatingImage(UIImage?)
 
@@ -39,7 +40,7 @@ public final class HUD {
         get { return PKHUD.sharedHUD.userInteractionOnUnderlyingViewsEnabled  }
         set { PKHUD.sharedHUD.userInteractionOnUnderlyingViewsEnabled = newValue }
     }
-
+    
     public static var leadingMargin: CGFloat {
         get { return PKHUD.sharedHUD.leadingMargin  }
         set { PKHUD.sharedHUD.leadingMargin = newValue }
@@ -99,6 +100,8 @@ public final class HUD {
             return PKHUDErrorView()
         case .progress:
             return PKHUDProgressView()
+        case .smallerProgress:
+            return PKHUDSmallerProgressView()
         case let .image(image):
             return PKHUDSquareBaseView(image: image)
         case let .rotatingImage(image):

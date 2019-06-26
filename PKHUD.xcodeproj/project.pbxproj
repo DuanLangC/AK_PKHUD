@@ -11,6 +11,10 @@
 		12CE19F41E25784D0062D873 /* PKHUDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE19F31E25784D0062D873 /* PKHUDDemoUITests.swift */; };
 		12CE19FD1E2578680062D873 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F996321E19514FD8001F73CA /* PKHUD.framework */; };
 		3097AF3A1C4843AE007DD42B /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */; };
+		3FEF27B97615CF867FD4D74F /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2E322E910133541C0208 /* CGRect+Ext.swift */; };
+		3FEF29B2565ED8D81A567735 /* PKHUDSmallerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF28552F6CA371ABC1613D /* PKHUDSmallerProgressView.swift */; };
+		3FEF2B9D66FF634CB8456224 /* CGRect+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2E322E910133541C0208 /* CGRect+Ext.swift */; };
+		3FEF2C8767B06623C0C2B30C /* PKHUDSmallerSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2AE486FFB0A6BC7C38BB /* PKHUDSmallerSquareBaseView.swift */; };
 		640011571C5B6C080013F32B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640011551C5B6C080013F32B /* HUD.swift */; };
 		F908BEC01BB849290015E5A8 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEBF1BB849290015E5A8 /* PKHUDSuccessView.swift */; };
 		F908BEC31BB84D0B0015E5A8 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEC21BB84D0B0015E5A8 /* PKHUDAnimating.swift */; };
@@ -87,6 +91,9 @@
 		12CE19F31E25784D0062D873 /* PKHUDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHUDDemoUITests.swift; sourceTree = "<group>"; };
 		12CE19F51E25784D0062D873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
+		3FEF28552F6CA371ABC1613D /* PKHUDSmallerProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSmallerProgressView.swift; sourceTree = "<group>"; };
+		3FEF2AE486FFB0A6BC7C38BB /* PKHUDSmallerSquareBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSmallerSquareBaseView.swift; sourceTree = "<group>"; };
+		3FEF2E322E910133541C0208 /* CGRect+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Ext.swift"; sourceTree = "<group>"; };
 		640011551C5B6C080013F32B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		F908BEBF1BB849290015E5A8 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSuccessView.swift; sourceTree = "<group>"; };
 		F908BEC21BB84D0B0015E5A8 /* PKHUDAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAnimating.swift; sourceTree = "<group>"; };
@@ -171,6 +178,8 @@
 				F908BEC71BB85EA70015E5A8 /* PKHUDProgressView.swift */,
 				12010C891C3D0E8D005DC6FC /* PKHUDAnimation.swift */,
 				3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */,
+				3FEF28552F6CA371ABC1613D /* PKHUDSmallerProgressView.swift */,
+				3FEF2AE486FFB0A6BC7C38BB /* PKHUDSmallerSquareBaseView.swift */,
 			);
 			name = "Content Views";
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 				F996324919514FEF001F73CA /* FrameView.swift */,
 				F996324B19514FEF001F73CA /* Window.swift */,
 				F996324C19514FEF001F73CA /* WindowRootViewController.swift */,
+				3FEF2E322E910133541C0208 /* CGRect+Ext.swift */,
 			);
 			name = Internal;
 			sourceTree = "<group>";
@@ -340,8 +350,9 @@
 					};
 					F99631FB19514FAC001F73CA = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = VECWWQL2MS;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					F996321D19514FD8001F73CA = {
 						CreatedOnToolsVersion = 6.0;
@@ -429,6 +440,7 @@
 			files = (
 				F996325919515052001F73CA /* DemoViewController.swift in Sources */,
 				F996320219514FAC001F73CA /* AppDelegate.swift in Sources */,
+				3FEF27B97615CF867FD4D74F /* CGRect+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +464,9 @@
 				F996324F19514FEF001F73CA /* PKHUD.swift in Sources */,
 				F935B1671B2B8D8C003C3734 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
 				12010C8A1C3D0E8D005DC6FC /* PKHUDAnimation.swift in Sources */,
+				3FEF2B9D66FF634CB8456224 /* CGRect+Ext.swift in Sources */,
+				3FEF29B2565ED8D81A567735 /* PKHUDSmallerProgressView.swift in Sources */,
+				3FEF2C8767B06623C0C2B30C /* PKHUDSmallerSquareBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,12 +647,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VECWWQL2MS;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NSExceptional.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -647,12 +665,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VECWWQL2MS;
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NSExceptional.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
